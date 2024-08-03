@@ -269,16 +269,3 @@ body {
 .tree-list-item.directory {
   color: var(--directory);
 }
-
-/**
-* Misc Styling
-*/
-
-.github-link {
-  color: var(--link);
-  margin: 1em;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  text-decoration: none;
-}
