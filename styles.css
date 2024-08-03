@@ -177,6 +177,7 @@ body {
 .prompt-cursor {
   color: var(--cursor);
   margin-left: 0.5em;
+  transition: all 0.1s;
 }
 
 .prompt-text {
