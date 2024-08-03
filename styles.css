@@ -1,6 +1,4 @@
-/**
-* Theme Definitions
-*/
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
   --body-bg: #3f3f3f;
@@ -15,7 +13,7 @@
   --tree: var(--fg);
 
   --fontSize: 13px;
-  --fontFamily: "Source Code Pro", monospace;
+  --fontFamily: "JetBrains Mono", monospace;
 }
 
 body.dark {
