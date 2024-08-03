@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
   --body-bg: #3f3f3f;
@@ -13,7 +14,14 @@
   --tree: var(--fg);
 
   --fontSize: 13px;
-  --fontFamily: "JetBrains Mono", monospace;
+  --fontFamily: "DotGothic16", sans-serif;
+}
+
+* {
+  transition: all 0.1s ease-in-out;
+  font-smooth: never;
+  -webkit-font-smoothing : none;
+  /*filter: url(#crispify);*/
 }
 
 body.dark {
@@ -121,9 +129,9 @@ body {
   box-sizing: border-box;
   width: 700px;
   height: 450px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
-  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
   padding: 1.5em 0em;
+  border: 2px outset var(--bg);
 }
 
 #terminal-content {
@@ -171,13 +179,13 @@ body {
 
 .prompt-title {
   color: var(--prompt);
+
   padding: 0.5em 0em;
 }
 
 .prompt-cursor {
   color: var(--cursor);
   margin-left: 0.5em;
-  transition: all 0.1s;
 }
 
 .prompt-text {
