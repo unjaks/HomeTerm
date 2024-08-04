@@ -62,7 +62,7 @@ function openLink(input) {
       return err;
     }
   }
-  return COMMANDS.open.help;
+  return COMMANDS.o.help;
 }
 
 function touch(input) {
