@@ -2,7 +2,7 @@
 const COMMANDS = {
   ls: { func: joinWriter(list, treeWriter), help: "usage: ls [<path to dir>]" },
   cd: { func: joinWriter(cd, textWriter), help: "usage: cd [<path>]" },
-  open: { func: joinWriter(openLink, textWriter), help: "usage: open <path>" },
+  o: { func: joinWriter(openLink, textWriter), help: "usage: open <path>" },
   touch: {
     func: joinWriter(touch, textWriter),
     help: "usage: touch <path to link> <url>",
