@@ -1,5 +1,3 @@
-import {Tween, Easing} from 'https://unpkg.com/@tweenjs/tween.js@23.1.3/dist/tween.esm.js'
-
 function safeParse(input) {
   try {
     return JSON.parse(input) || {};
