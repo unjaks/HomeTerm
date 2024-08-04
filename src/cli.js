@@ -1,3 +1,5 @@
+import {Tween, Easing} from 'https://unpkg.com/@tweenjs/tween.js@23.1.3/dist/tween.esm.js'
+
 // Defined Commands
 const COMMANDS = {
   ls: { func: joinWriter(list, treeWriter), help: "usage: ls [<path to dir>]" },
