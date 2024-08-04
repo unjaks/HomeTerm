@@ -1,3 +1,5 @@
+import {Tween, Easing} from 'https://unpkg.com/@tweenjs/tween.js@23.1.3/dist/tween.esm.js'
+
 function safeParse(input) {
   try {
     return JSON.parse(input) || {};
@@ -27,7 +29,18 @@ function getCursor(pos) {
   let cursor = links;
   pos.forEach((p) => {
     // TODO: handle bad positions
-    cursor = cursor[p];
+
+	const tween = new Tween(coords, false) // Create a new tween that modifies 'coords'.
+		.to(cursor, 0200)
+		.easing(Easing.Quadratic.InOut)
+		.onUpdate(() => {
+			  cursor.style.setProperty('transform', 'translate('cursor[p]')')
+		    })
+		    .start() // Start the tween immediately.
+
+	requestAnimationFrame(animate)
+    
+  //cursor = cursor[p];
   });
   return cursor;
 }
