@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
-  --body-bg: #1d2021;
-  --bg: #282828;
-  --fg: #ebdbb2;
+  --body-bg: #3f3f3f;
+  --bg: #1f1f1f;
+  --fg: #d4d4d4;
   --directory: #83a06c;
   --prompt: #83a06c;
   --cursor: var(--fg);
