@@ -2,9 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
-  --body-bg: #3f3f3f;
-  --bg: #1f1f1f;
-  --fg: #d4d4d4;
+  --body-bg: #1d2021;
+  --bg: #282828;
+  --fg: #ebdbb2;
   --directory: #83a06c;
   --prompt: #83a06c;
   --cursor: var(--fg);
@@ -14,13 +14,12 @@
   --tree: var(--fg);
 
   --fontSize: 13px;
-  --fontFamily: "DotGothic16", sans-serif;
+  --fontFamily: "JetBrainsMono Nerd Font";
 }
 
 * {
   transition: all 0.1s ease-in-out;
-  font-smooth: never;
-  -webkit-font-smoothing : none;
+  /*font-smooth: never;*/
   /*filter: url(#crispify);*/
 }
 
@@ -31,9 +30,9 @@ body.dark {
 body.light {
   --body-bg: #f3f3f3;
   --bg: #fefefe;
-  --fg: #1e1e1e;
-  --directory: #526e39;
-  --prompt: #526e39;
+  --fg: ##fbf1c7;
+  --directory: #a89984;
+  --prompt: #ebdbb2;
   --cursor: var(--fg);
   --listItem: var(--fg);
   --listTitle: var(--fg);
